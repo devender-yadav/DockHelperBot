@@ -10,7 +10,7 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-import com.dev.telegram.dockhelper.copy.DockProposalApi;
+import com.dev.telegram.dockhelper.proposals.DockProposalApi;
 import com.dev.telegram.dockhelper.utils.PropertyReader;
 
 /**
@@ -34,7 +34,6 @@ public class DockHelperBot extends TelegramLongPollingBot {
 			}
 
 			if (msg != null) {
-				LOGGER.info(msg);
 				postMsg(update, msg);
 			}
 		}

@@ -1,4 +1,4 @@
-package com.dev.telegram.dockhelper.copy;
+package com.dev.telegram.dockhelper.proposals;
 
 import static com.dev.telegram.dockhelper.utils.Constants.NEW_LINE;
 

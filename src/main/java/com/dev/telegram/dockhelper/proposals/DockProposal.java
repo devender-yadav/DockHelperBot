@@ -1,4 +1,4 @@
-package com.dev.telegram.dockhelper.copy;
+package com.dev.telegram.dockhelper.proposals;
 
 import java.util.ArrayList;
 import java.util.Date;
