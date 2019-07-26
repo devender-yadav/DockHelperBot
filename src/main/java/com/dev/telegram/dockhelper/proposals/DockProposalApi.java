@@ -51,7 +51,7 @@ public class DockProposalApi {
 			builder.append(CommonUtil.removeNewLine(proposal.getDescription()));
 			builder.append(NEW_LINE);
 			builder.append(NEW_LINE);
-			builder.append("💰 Total Docks Staked - " + proposal.getTotalDockStaked());
+			builder.append("💰 Total Docks Voted - " + proposal.getTotalDockStaked());
 			builder.append(NEW_LINE);
 			builder.append(NEW_LINE);
 			builder.append("📅 Start Date - " + CommonUtil.convertDateToUTC(proposal.getStartTime()));
