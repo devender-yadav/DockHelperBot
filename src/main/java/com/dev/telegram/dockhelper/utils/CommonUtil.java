@@ -6,12 +6,14 @@ import static com.dev.telegram.dockhelper.utils.Constants.WAIT_INTERVAL;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 import java.util.TimeZone;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class CommonUtil.
  * 
@@ -52,13 +54,35 @@ public class CommonUtil {
 	}
 
 	/**
-	 * Removes the new line.
+	 * Removes the new line character.
 	 *
-	 * @param str the str
-	 * @return the string
+	 * @param str the string
+	 * @return the updated string
 	 */
-	public static String removeNewLine(String str) {
+	public static String removeNewLineChar(String str) {
 		return str.replace(NEW_LINE, EMPTY_STRING);
 	}
-
+	
+	/**
+	 * Between dates.
+	 *
+	 * @param firstDate the first date
+	 * @param secondDate the second date
+	 * @return the days between dates
+	 */
+	public static long betweenDates(Date firstDate, Date secondDate)
+	{
+	    return ChronoUnit.DAYS.between(firstDate.toInstant(), secondDate.toInstant());
+	}
+	
+	/**
+	 * Format number. For example, 1456443 to 1,456,433
+	 *
+	 * @param number the number
+	 * @return the string
+	 */
+	public static String formatNumber(int number){
+		return String.format("%,d", number);
+	}
+	
 }

@@ -1,6 +1,8 @@
 package com.dev.telegram.dockhelper.proposals;
 
 import static com.dev.telegram.dockhelper.utils.Constants.NEW_LINE;
+import static com.dev.telegram.dockhelper.utils.Constants.STAR;
+import static com.dev.telegram.dockhelper.utils.Constants.UNDERSCORE;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -46,12 +48,12 @@ public class DockProposalApi {
 		String msg = "";
 		for (DockProposal proposal : proposals) {
 			StringBuilder builder = new StringBuilder();
-			builder.append("🗒️ " + proposal.getTitle());
+			builder.append("🗒️ " + STAR + proposal.getTitle() + STAR);
 			builder.append(NEW_LINE);
-			builder.append(CommonUtil.removeNewLine(proposal.getDescription()));
+			builder.append(UNDERSCORE + CommonUtil.removeNewLineChar(proposal.getDescription()) + UNDERSCORE);
 			builder.append(NEW_LINE);
 			builder.append(NEW_LINE);
-			builder.append("💰 Total Docks Voted - " + proposal.getTotalDockStaked());
+			builder.append("💰 Total Docks Voted - " + CommonUtil.formatNumber(proposal.getTotalDockStaked()));
 			builder.append(NEW_LINE);
 			builder.append(NEW_LINE);
 			builder.append("📅 Start Date - " + CommonUtil.convertDateToUTC(proposal.getStartTime()));
@@ -61,13 +63,14 @@ public class DockProposalApi {
 			builder.append(NEW_LINE);
 
 			if (proposal.getIsClosed()) {
-				builder.append("Proposal is closed 📕");
-				builder.append(NEW_LINE);
+				builder.append("📕 Proposal is closed ");
 				if (proposal.isPassed()) {
-					builder.append("Proposal is passed 🤗");
+					builder.append("and passed 🤗");
 				}
 			} else {
-				builder.append("Proposal is active.Do Vote!");
+				builder.append("Proposal is active. Only ");
+				builder.append(STAR + CommonUtil.betweenDates(proposal.getStartTime(), proposal.getEndTime()) + STAR);
+				builder.append(" days left to vote!");
 			}
 			builder.append(NEW_LINE);
 			builder.append(NEW_LINE);

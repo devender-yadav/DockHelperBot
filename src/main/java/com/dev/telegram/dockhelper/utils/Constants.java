@@ -23,6 +23,15 @@ public class Constants {
 	/** The Constant NEW_LINE. */
 	public static final String NEW_LINE = "\n";
 
+	/** The Constant TICK. */
+	public static final String TICK = "`";
+	
+	/** The Constant STAR. */
+	public static final String STAR = "*";
+	
+	/** The Constant UNDERSCORE. */
+	public static final String UNDERSCORE = "_";
+	
 	/** The Constant SLASH. */
 	public static final String SLASH = "/";
 
