@@ -93,7 +93,7 @@ public class DockHelperBot extends TelegramLongPollingBot {
 	 * @param reply the msg to be sent back to user
 	 */
 	private void postMsg(Update update, String reply) {
-		SendMessage message = new SendMessage().setChatId(update.getMessage().getChatId()).setText(reply);
+		SendMessage message = new SendMessage().setChatId(update.getMessage().getChatId()).setText(reply).enableMarkdown(true);
 		try {
 			execute(message);
 			LOGGER.info("sending msg!!!");
