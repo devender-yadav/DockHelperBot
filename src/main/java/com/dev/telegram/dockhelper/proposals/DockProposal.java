@@ -75,45 +75,45 @@ public class DockProposal {
 	}
 
 	/**
-	 * Sets the dock staked.
+	 * Sets the dockStaked
 	 *
-	 * @param dockStaked the new dock staked
+	 * @param dockStaked
 	 */
 	public void setDockStaked(List<String> dockStaked) {
 		this.dockStaked = dockStaked;
 	}
 
 	/**
-	 * Gets the checks if is closed.
+	 * Gets the isClosed
 	 *
-	 * @return the checks if is closed
+	 * @return isClosed
 	 */
 	public boolean getIsClosed() {
 		return isClosed;
 	}
 
 	/**
-	 * Sets the closed.
+	 * Sets the isClosed.
 	 *
-	 * @param isClosed the new closed
+	 * @param isClosed
 	 */
-	public void setClosed(boolean isClosed) {
+	public void setIsClosed(boolean isClosed) {
 		this.isClosed = isClosed;
 	}
 
 	/**
-	 * Gets the highest stake index.
+	 * Gets highestStakeIndex
 	 *
-	 * @return the highest stake index
+	 * @return the highestStakeIndex
 	 */
 	public byte getHighestStakeIndex() {
 		return highestStakeIndex;
 	}
 
 	/**
-	 * Sets the highest stake index.
+	 * Sets the highestStakeIndex.
 	 *
-	 * @param highestStakeIndex the new highest stake index
+	 * @param highestStakeIndex
 	 */
 	public void setHighestStakeIndex(byte highestStakeIndex) {
 		this.highestStakeIndex = highestStakeIndex;
@@ -131,25 +131,25 @@ public class DockProposal {
 	/**
 	 * Sets the options.
 	 *
-	 * @param options the new options
+	 * @param options
 	 */
 	public void setOptions(List<String> options) {
 		this.options = options;
 	}
 
 	/**
-	 * Gets the ipfs hash.
+	 * Gets the ipfsHash.
 	 *
-	 * @return the ipfs hash
+	 * @return the ipfsHash
 	 */
 	public String getIpfsHash() {
 		return ipfsHash;
 	}
 
 	/**
-	 * Sets the ipfs hash.
+	 * Sets the ipfsHash.
 	 *
-	 * @param ipfsHash the new ipfs hash
+	 * @param ipfsHash
 	 */
 	public void setIpfsHash(String ipfsHash) {
 		this.ipfsHash = ipfsHash;
@@ -167,68 +167,68 @@ public class DockProposal {
 	/**
 	 * Sets the description.
 	 *
-	 * @param description the new description
+	 * @param description
 	 */
 	public void setDescription(String description) {
 		this.description = description;
 	}
 
 	/**
-	 * Gets the tx id.
+	 * Gets the blockchain txId.
 	 *
-	 * @return the tx id
+	 * @return the txId
 	 */
 	public String getTxId() {
 		return txId;
 	}
 
 	/**
-	 * Sets the tx id.
+	 * Sets the txId.
 	 *
-	 * @param txId the new tx id
+	 * @param txId the blockchain txId
 	 */
 	public void setTxId(String txId) {
 		this.txId = txId;
 	}
 
 	/**
-	 * Gets the start time.
+	 * Gets the proposal startTime.
 	 *
-	 * @return the start time
+	 * @return the startTime
 	 */
 	public Date getStartTime() {
 		return startTime;
 	}
 
 	/**
-	 * Sets the start time.
+	 * Sets the proposal startTime.
 	 *
-	 * @param startTime the new start time
+	 * @param startTime
 	 */
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
 	/**
-	 * Gets the end time.
+	 * Gets the proposal endTime.
 	 *
-	 * @return the end time
+	 * @return the endTime
 	 */
 	public Date getEndTime() {
 		return endTime;
 	}
 
 	/**
-	 * Sets the end time.
+	 * Sets the proposal endTime.
 	 *
-	 * @param endTime the new end time
+	 * @param endTime
 	 */
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
 	/**
-	 * Checks if is passed.
+	 * Checks if passed.
 	 *
 	 * @return true, if is passed
 	 */
@@ -239,14 +239,14 @@ public class DockProposal {
 	/**
 	 * Sets the passed.
 	 *
-	 * @param passed the new passed
+	 * @param passed
 	 */
 	public void setPassed(boolean passed) {
 		this.passed = passed;
 	}
 
 	/**
-	 * Gets the title.
+	 * Gets the proposal title.
 	 *
 	 * @return the title
 	 */
@@ -255,9 +255,9 @@ public class DockProposal {
 	}
 
 	/**
-	 * Sets the title.
+	 * Sets the proposal title.
 	 *
-	 * @param title the new title
+	 * @param title
 	 */
 	public void setTitle(String title) {
 		this.title = title;
