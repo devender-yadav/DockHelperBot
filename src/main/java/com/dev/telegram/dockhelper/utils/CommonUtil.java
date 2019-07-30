@@ -13,7 +13,6 @@ import java.util.TimeZone;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class CommonUtil.
  * 
@@ -48,7 +47,7 @@ public class CommonUtil {
 	 * @return the string
 	 */
 	public static String convertDateToUTC(Date date) {
-		DateFormat formatterUTC = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+		DateFormat formatterUTC = new SimpleDateFormat("dd-MM-yyyy");
 		formatterUTC.setTimeZone(TimeZone.getTimeZone("UTC"));
 		return formatterUTC.format(date);
 	}

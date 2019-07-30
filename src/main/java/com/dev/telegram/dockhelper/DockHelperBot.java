@@ -52,8 +52,6 @@ public class DockHelperBot extends TelegramLongPollingBot {
 			return "Hi! I will help you in viewing Dock Proposals.\n\nClick /help to see commands!";
 		case "/help":
 			return buildHelpMsg();
-		case "/proposals":
-			return DockProposalApi.generateTelegramMsg(DockProposalApi.getProposals());
 		case "/closed_proposals":
 			return DockProposalApi.generateTelegramMsg(DockProposalApi.getClosedProposals());
 		case "/active_proposals":

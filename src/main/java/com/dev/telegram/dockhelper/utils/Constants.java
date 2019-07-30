@@ -32,6 +32,9 @@ public class Constants {
 	/** The Constant UNDERSCORE. */
 	public static final String UNDERSCORE = "_";
 	
+	/** The Constant HYPHEN. */
+	public static final String HYPHEN = " - ";
+	
 	/** The Constant SLASH. */
 	public static final String SLASH = "/";
 
