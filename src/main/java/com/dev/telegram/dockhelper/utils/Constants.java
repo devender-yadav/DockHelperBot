@@ -35,6 +35,9 @@ public class Constants {
 	/** The Constant HYPHEN. */
 	public static final String HYPHEN = " - ";
 	
+	/** The Constant HASH. */
+	public static final String HASH = "#";
+	
 	/** The Constant SLASH. */
 	public static final String SLASH = "/";
 
